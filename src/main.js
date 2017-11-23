@@ -19,6 +19,8 @@ new Vue({
   el: '#app',
   router,
   template: '<home/>',
-  components: { Home }
+  components: { 
+    Home
+   }
 })
 /* eslint-enable */

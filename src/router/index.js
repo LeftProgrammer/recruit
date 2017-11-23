@@ -2,7 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import App from '../App'
 import home from '../components/home/home'
-import content from '../components/content/content'
+// import company from '../components/company/company.vue'
 Vue.use(Router)
 
 export default new Router({
@@ -15,9 +15,9 @@ export default new Router({
       path: 'home',
       component: home
     },
-    {
-        path: 'connent',
-        component: content  
-    }
+    // {
+    //     path: 'company',
+    //     component: company  
+    // }
   ]
 })

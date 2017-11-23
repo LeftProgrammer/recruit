@@ -3,29 +3,23 @@
 <template>
   <div id="home">
     <v-header></v-header>
-    <div class="middle">
-      <!-- 使用 router-link 组件来导航. -->
-      <!-- 通过传入 `to` 属性指定链接. -->
-      <!-- <router-link> 默认会被渲染成一个 `<a>` 标签 -->
-      <router-link to="/content">go</router-link>
-    </div>
-    <!-- 路由出口 -->
-    <!-- 路由匹配到的组件将渲染在这里 -->
-    <router-view></router-view>
-    <v-footer></v-footer>
+    <v-tab></v-tab>
+    <v-content></v-content>
   </div>
 </template>
 
 <script>
   //引入创建的组件 import
   import header from '../header/header';
-  import footer from '../footer/footer';
+  import tab from '../tab/tab.vue';
+  import content from '../content/content.vue';
 
   export default {
     //注册组件
     components: {
       'v-header': header,
-      'v-footer': footer
+      'v-tab': tab,
+      'v-content': content
     }
   }
 
@@ -33,6 +27,6 @@
 
 <style>
     #home {
-        background: #000  
+        background: rgba(7,17,27,0.1);  
     }   
 </style>
